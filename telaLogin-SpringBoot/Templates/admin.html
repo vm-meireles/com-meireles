@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: darkred;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+        }
+        .div-form{
+            width: 230px;
+            height: 280px;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+        .btn{
+            width: 60px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-form">
+        <h1>Welcome, <span th:text="${user}"></span></h1>
+        <form action="/sair" method="get">
+            <input class="btn" type="submit" value="Sair">
+        </form>
+    </div>
+</body>
+</html>
